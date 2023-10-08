@@ -1,0 +1,37 @@
+<div class="mainDiv rounded">
+  <div class="row">
+    <div class="column">
+      <div class="form-group">
+        <label for="lesson" class="bold">Lesson</label>
+        <select id="lesson" name="lesson" ngModel class="form-control lesson-format">
+          <option value="1">1 - Hello</option>
+          <option value="2">2 - Basic</option>
+          <option value="3">3 - Locations</option>
+          <option value="4">4 - Classifiers</option>
+        </select>
+      </div>
+    </div>
+    <div class="column"><span class="bold">Tones checking</span>
+      <div class="form-check form-switch">
+        <input class="form-check-input" (change)="setTonesCheckingEnabled($event)"
+               type="checkbox" id="flexSwitchCheckDefault" checked>
+        <label class="form-check-label" for="flexSwitchCheckDefault">{{tonesCheckingEnabled}}</label>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 20px">
+    The translation of
+    <span class="text-to-translate">I love pineapples</span>
+    is:<br>
+    <input type="text" class="form-control inline-class" id="answer">
+  </div>
+  <div class="row" style="margin-top: 20px">
+    <div class="column" style="text-align: right">
+      <button type="button" class="btn btn-light">Solution</button>
+    </div>
+    <div class="column">
+      <button type="button" class="btn btn-primary">Next</button>
+    </div>
+  </div>
+</div>

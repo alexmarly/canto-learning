@@ -1,0 +1,35 @@
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+}
+
+.example-container mat-form-field + mat-form-field {
+  margin-left: 8px;
+}
+
+.mainDiv {
+  margin: 20px auto auto;
+  width: 60%;
+  padding: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.inline-class {
+  margin-top: 10px;
+}
+
+.text-to-translate {
+  font-weight: bold;
+  color: #316CF4;
+}
+
+label {
+  margin-bottom: 10px;
+}
